@@ -39,7 +39,9 @@
     "url": "https://github.com/jcoreio/superagent-verbose-errors.git"
   },
   "keywords": [
-    "skeleton"
+    "superagent",
+    "verbose",
+    "error"
   ],
   "bugs": {
     "url": "https://github.com/jcoreio/superagent-verbose-errors/issues"
