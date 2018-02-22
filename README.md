@@ -10,6 +10,21 @@ include response body in superagent errors for failed requests
 ## Usage
 
 ```sh
-npm install --save superagent-verbose-errors
+npm install --save superagent superagent-use superagent-verbose-errors
 ```
 
+To make any superagent request that fails append the response body to
+its error message:
+```js
+const superagent = require('superagent-use')(require('superagent'))
+superagent.use(require('superagent-verbose-errors'))
+```
+
+
+To only include the response body for certain errors:
+```js
+const superagent = require('superagent-use')(require('superagent'))
+superagent.use(require('superagent-verbose-errors')({
+  filter: res => res.status === 400
+}))
+```
