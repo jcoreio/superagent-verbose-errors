@@ -1,7 +1,7 @@
 {
-  "name": "agnostic-library-skeleton",
-  "version": "1.0.0",
-  "description": "my skeleton for transpiler-free JS packages",
+  "name": "superagent-verbose-errors",
+  "version": "0.0.0-development",
+  "description": "include response body in superagent errors for failed requests",
   "main": "index.js",
   "author": "Andy Edwards",
   "license": "MIT",
@@ -39,15 +39,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedwards1211/agnostic-library-skeleton.git"
+    "url": "https://github.com/jcoreio/superagent-verbose-errors.git"
   },
   "keywords": [
     "skeleton"
   ],
   "bugs": {
-    "url": "https://github.com/jedwards1211/agnostic-library-skeleton/issues"
+    "url": "https://github.com/jcoreio/superagent-verbose-errors/issues"
   },
-  "homepage": "https://github.com/jedwards1211/agnostic-library-skeleton#readme",
+  "homepage": "https://github.com/jcoreio/superagent-verbose-errors#readme",
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",
