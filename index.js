@@ -11,7 +11,8 @@ exports = module.exports = function (options) {
 function attachVerboseErrors(options, req) {
   req.on('error', function (err) {
     if (!err.response || (options.filter && !options.filter(err.response))) return
-    if (!err.response.get('Content-Type').startsWith('text/')) {
+    var contentType = err.response.get('Content-Type')
+    if (contentType && !contentType.startsWith('text/')) {
       err.message += '\n' + JSON.stringify(err.response.body, null, 2)
     } else {
       err.message += '\n' + err.response.text
